@@ -1,38 +1,70 @@
-.App {
-  text-align: center;
-}
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.bg{
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  gap: 60px;
+  flex-wrap: wrap;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  flex-direction: row;
+  width: 100%;
+  padding-bottom: 30px;
 }
 
-.App-link {
-  color: #61dafb;
+
+.Container{
+  width: 350px;
+  height: 650px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  margin-top: 50px;
+  margin-bottom: 0px;
+  border-radius: 1.5em/2em;
+  box-shadow: 0px 10px 13px -4px rgba(0, 0, 0, 0.712), -10px 10px 5px -5px rgba(57, 57, 58, 0.349);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+.proof{
+  display: flex;
+  justify-content: center;
+
+}
+
+.prueba{
+  background-color: rgb(238, 209, 167);
+  border-radius: 30px;
+  width: 250px;
+  height: 600px;
+  text-align: center;
+  padding: 15px;
+  background-image: ;
+
+}
+
+
+.basics{
+  font-size: 25px;
+  margin: 15px;
+}
+
+.botonDetalles{
+  margin: 15px;
+  background-color: #fff;
+  border: 1px solid #d5d9d9;
+  border-radius: 8px;
+  box-sizing: border-box;
+  color: #0f1111;
+  cursor: pointer;
+  display: inline-block;
+  font-family: "Amazon Ember",sans-serif;
+  font-size: 13px;
+  line-height: 29px;
+  position: relative;
+  text-align: center;
+  width: 120px;
+}
+
+
+.navItem{
+  display: inline-block;
+  margin-left: 150px;
 }

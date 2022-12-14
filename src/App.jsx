@@ -1,7 +1,9 @@
-import logo from './logo.svg';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import './App.css';
 import NavBar from './components/NavBar';
-import ItemList from './components/ItemList';
+import ItemDetailContainer from './components/products/ItemDetailContainer';
+import ItemListContainer from './components/products/ItemListContainer';
+
 
 
 
@@ -9,17 +11,15 @@ import ItemList from './components/ItemList';
 
 function App() {
 
-
-  const mensaje = () => {
-    console.log("mensaje de consola");
-  }
-  
   return (
-    <div className="App">
-      <NavBar/>
-      <ItemList greeting="Hola Mundo"/>
-
-    </div>
+    <BrowserRouter>
+      <NavBar />
+      <Routes>
+        <Route path='/' element={<ItemListContainer />} />
+        <Route path='/category' element={<ItemListContainer />} />
+        <Route path='/category/:id' element={<ItemDetailContainer />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 
