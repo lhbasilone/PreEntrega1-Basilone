@@ -5,8 +5,10 @@ const NavBar = () => {
     <div className="navbar bg-base-100">
       <div className="flex-1">
         <Link to='/' className="btn btn-ghost normal-case text-xl">Enraizar Nutricion</Link>
-              <Link className="navItem">basicos</Link>
-              <Link className="navItem">basicos</Link>
+              <Link to='Footer.js' className="navItem">basicos</Link>
+              <Link className="navItem">Saludable</Link>
+              <Link className="navItem">Medicinal</Link>
+              <Link className="navItem">Fitness</Link>
       </div>
       <div className="flex-none">
         <div className="dropdown dropdown-end">
@@ -21,7 +23,10 @@ const NavBar = () => {
               <span className="font-bold text-lg">10 Items</span>
               <span className="text-info">Subtotal: $999</span>
               <div className="card-actions">
-                <button className="btn btn-primary btn-block">View cart</button>
+                
+                <Link to='/card/cart'>
+                  <button className="btn btn-primary btn-block">View cart</button>
+                </Link>
               </div>
             </div>
           </div>

@@ -4,17 +4,17 @@ import { Link } from "react-router-dom"
 
 
 
-export const CardEbook = ({ id, title, description, price, stock, Image }) => {
+export const CardEbook = ({ ID, libro, description, price, stock, img }) => {
   return (
     <div className="bg">
       <div className="Container">
-        <img src={Image}></img>
+        <img src={img}></img>
         <div className="Card">
-          <div>{title}</div>
+          <div>{libro}</div>
           <div>{description}</div>
           <div>{price}</div>
           <div>{stock}</div>
-          <Link to={`/category/${id}`} className="btn">Ver detalle</Link>
+          <Link to={`/category/${ID}`} className="btn">Ver detalle</Link>
         </div>
       </div>
     </div>

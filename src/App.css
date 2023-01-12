@@ -1,15 +1,3 @@
-
-.bg{
-  display: flex;
-  gap: 60px;
-  flex-wrap: wrap;
-  justify-content: center;
-  flex-direction: row;
-  width: 100%;
-  padding-bottom: 30px;
-}
-
-
 .Container{
   width: 350px;
   height: 650px;
@@ -68,3 +56,19 @@
   display: inline-block;
   margin-left: 150px;
 }
+
+
+.container--cards{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.bg{
+  margin-left: 30px;
+}
+
+
